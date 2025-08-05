@@ -6,6 +6,7 @@
     --white: hsl(0, 100%, 100%);
     --grey-500: hsl(217, 12%, 63%);
     --grey-900: hsl(213, 19%, 18%);
+    --grey-930: hsl(215, 14%, 13%);
     --grey-950: hsl(216, 12%, 8%);
     --grey-bg:  hsla(217, 12%, 63%, 0.096);
     --fs-p: 15px;
@@ -31,7 +32,9 @@ body {
 }
 
 .container {
-    background-color: var(--grey-900);
+    background: linear-gradient(to bottom, var(--grey-900), var(--grey-900), var(--grey-930));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -122,7 +125,9 @@ body {
 }
 
 .second-container {
-    background-color: var(--grey-900);
+    background: linear-gradient(to bottom, var(--grey-900), var(--grey-900), var(--grey-930));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     display: flex;
     flex-direction: column;
     gap: 30px;
